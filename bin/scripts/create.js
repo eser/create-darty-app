@@ -9,7 +9,7 @@ function create(folder) {
     if (folder === undefined) {
         console.error(`${colors.red('specify a directory to create project files.')}
 
-${colors.white('example:')} 'npx dart create app'
+${colors.white('example:')} 'npx create-dart-app app'
 `);
 
         process.exit(1);

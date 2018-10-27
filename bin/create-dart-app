@@ -2,13 +2,14 @@
 
 'use strict';
 
+const locateCommandFunc = require('./utils/locateCommandFunc');
+
 process.on('unhandledRejection', (err) => {
     throw err;
 });
 
 const args = process.argv.slice(2);
-
-const commandFunc = require('./scripts/create');
+const commandFunc = locateCommandFunc(...args);
 
 if (commandFunc.error !== null) {
     console.error(commandFunc.error);
