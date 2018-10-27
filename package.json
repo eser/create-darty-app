@@ -1,0 +1,47 @@
+{
+  "name": "create-dart-app",
+  "description": "Create Dart App",
+  "keywords": [
+    "typescript",
+    "typed",
+    "react",
+    "spa",
+    "boilerplate",
+    "starter"
+  ],
+  "version": "0.0.1",
+  "homepage": "https://github.com/eserozvataf/create-dart-app",
+  "author": "Eser Ozvataf <eser@ozvataf.com>",
+  "contributors": [
+    {
+      "name": "Eser Ozvataf",
+      "email": "eser@ozvataf.com",
+      "url": "http://eser.ozvataf.com/"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/eserozvataf/create-dart-app.git"
+  },
+  "bugs": {
+    "url": "https://github.com/eserozvataf/create-dart-app/issues"
+  },
+  "license": "Apache-2.0",
+  "main": "./bin/create-dart-app",
+  "bin": {
+    "create-dart-app": "./bin/create-dart-app"
+  },
+  "files": [
+    "bin",
+    "templates"
+  ],
+  "engines": {
+    "node": ">=8.10.0"
+  },
+  "dependencies": {
+    "colors": "^1.3.2",
+    "cross-spawn": "^6.0.5",
+    "node-fetch": "^2.2.0",
+    "rimraf": "^2.6.2"
+  }
+}
