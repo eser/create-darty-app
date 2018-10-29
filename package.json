@@ -8,7 +8,7 @@
     "boilerplate",
     "starter"
   ],
-  "version": "0.0.4",
+  "version": "0.0.5",
   "homepage": "https://github.com/eserozvataf/create-dart-app",
   "author": "Eser Ozvataf <eser@ozvataf.com>",
   "contributors": [
@@ -32,7 +32,8 @@
   },
   "files": [
     "bin",
-    "templates"
+    "templates",
+    "presets.json"
   ],
   "engines": {
     "node": ">=8.10.0"
