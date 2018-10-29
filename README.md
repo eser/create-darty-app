@@ -12,11 +12,11 @@ ready for development.
 
 Ensure that `node.js` is installed on your system first.
 
-Use the following command:
+Use the following commands depending on preset you want to create:
 
-```sh
-npx create-dart-app app
-```
+| Preset                   | Command                                                                                |
+|--------------------------|----------------------------------------------------------------------------------------|
+| React                    | `npx create-dart-app react app`                                                        |
 
 
 ## Todo List

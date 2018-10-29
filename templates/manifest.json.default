@@ -1,9 +1,0 @@
-{
-    "title": "Dart App",
-    "htmlTemplates": {
-        "index.html": "./src/index.html"
-    },
-    "staticFiles": [
-        "./public/**/*"
-    ]
-}

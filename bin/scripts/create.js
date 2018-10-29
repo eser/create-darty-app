@@ -1,15 +1,38 @@
 const shellSpawn = require('../utils/shellSpawn');
+const presets = require('../../presets.json');
+
 const path = require('path');
 const rimraf = require('rimraf');
 const colors = require('colors/safe');
 
-const baseRepo = 'https://github.com/eserozvataf/dart-app';
+function create(preset, folder) {
+    const selectedPreset = presets[preset];
 
-function create(folder) {
+    if (selectedPreset === undefined || preset === undefined) {
+        if (selectedPreset !== undefined) {
+            console.error(colors.red(`no such preset named ${preset}`));
+        }
+
+        console.error(`${colors.red('specify a preset to create project files.')}
+
+${colors.yellow('preset list:')}`);
+
+        for (const presetKey in presets) {
+            console.error(`- ${colors.white(presetKey)}`);
+        }
+
+        console.error(`
+${colors.white('example:')} 'npx create-dart-app react app'
+`);
+
+        process.exit(1);
+        return;
+    }
+
     if (folder === undefined) {
         console.error(`${colors.red('specify a directory to create project files.')}
 
-${colors.white('example:')} 'npx create-dart-app app'
+${colors.white('example:')} 'npx create-dart-app ${preset} app'
 `);
 
         process.exit(1);
@@ -18,7 +41,7 @@ ${colors.white('example:')} 'npx create-dart-app app'
 
     const target = path.resolve(process.cwd(), folder);
 
-    shellSpawn('git', [ 'clone', '--depth=1', '--branch=master', baseRepo, target ]);
+    shellSpawn('git', [ 'clone', '--depth=1', '--branch=master', selectedPreset.repository, target ]);
     rimraf.sync(`${target}/.git`);
     shellSpawn('npm', [ 'install' ], target);
 
