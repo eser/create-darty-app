@@ -17,6 +17,7 @@ Use the following commands depending on preset you want to create:
 | Preset                   | Command                                       | Repository                                                 |
 |--------------------------|-----------------------------------------------|------------------------------------------------------------|
 | React                    | `npx create-dart-app react app`               | https://github.com/eserozvataf/dart-react-app              |
+| React Hooks              | `npx create-dart-app react-hooks app`         | https://github.com/eserozvataf/dart-react-hooks-app        |
 
 
 ## Todo List
