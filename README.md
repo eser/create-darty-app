@@ -14,14 +14,12 @@ Ensure that `node.js` is installed on your system first.
 
 Use the following commands depending on preset you want to create:
 
-| Preset                   | Command                                                                                |
-|--------------------------|----------------------------------------------------------------------------------------|
-| React                    | `npx create-dart-app react app`                                                        |
+| Preset                   | Command                                       | Repository                                                 |
+|--------------------------|-----------------------------------------------|------------------------------------------------------------|
+| React                    | `npx create-dart-app react app`               | https://github.com/eserozvataf/dart-react-app              |
 
 
 ## Todo List
-
-- App Templates
 
 See [GitHub Projects](https://github.com/eserozvataf/create-dart-project/projects) for more.
 
@@ -29,7 +27,6 @@ See [GitHub Projects](https://github.com/eserozvataf/create-dart-project/project
 ## Requirements
 
 * node.js (https://nodejs.org/)
-
 
 
 ## License
