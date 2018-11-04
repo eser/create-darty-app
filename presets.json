@@ -1,8 +1,8 @@
 {
     "react": {
-        "repository": "https://github.com/eserozvataf/dart-react-app"
+        "repository": "https://github.com/eserozvataf/darty-react-app"
     },
     "react-hooks": {
-        "repository": "https://github.com/eserozvataf/dart-react-hooks-app"
+        "repository": "https://github.com/eserozvataf/darty-react-hooks-app"
     }
 }

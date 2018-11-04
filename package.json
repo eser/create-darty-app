@@ -1,6 +1,6 @@
 {
-  "name": "create-dart-app",
-  "description": "Create Dart App",
+  "name": "create-darty-app",
+  "description": "Create Darty App",
   "keywords": [
     "typescript",
     "typed",
@@ -8,8 +8,8 @@
     "boilerplate",
     "starter"
   ],
-  "version": "0.0.6",
-  "homepage": "https://github.com/eserozvataf/create-dart-app",
+  "version": "0.0.7",
+  "homepage": "https://github.com/eserozvataf/create-darty-app",
   "author": "Eser Ozvataf <eser@ozvataf.com>",
   "contributors": [
     {
@@ -20,15 +20,15 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/eserozvataf/create-dart-app.git"
+    "url": "https://github.com/eserozvataf/create-darty-app.git"
   },
   "bugs": {
-    "url": "https://github.com/eserozvataf/create-dart-app/issues"
+    "url": "https://github.com/eserozvataf/create-darty-app/issues"
   },
   "license": "Apache-2.0",
-  "main": "./bin/create-dart-app",
+  "main": "./bin/create-darty-app",
   "bin": {
-    "create-dart-app": "./bin/create-dart-app"
+    "create-darty-app": "./bin/create-darty-app"
   },
   "files": [
     "bin",

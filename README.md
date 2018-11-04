@@ -1,11 +1,22 @@
-# [Create Dart App](https://github.com/eserozvataf/create-dart-app)
+# 🎯 [Create Darty App](https://github.com/eserozvataf/create-darty-app)
 
-Dart is a front-end development system to allow developers to start their projects
-immediately. By Dart's convention over configuration mindset, webpack and typescript
-compiler configurations are handled by dart's itself.
+Darty is a front-end development system to allow developers to start their projects
+immediately. By Darty's convention over configuration mindset, webpack and typescript
+compiler configurations are handled by darty's itself.
 
-Create Dart App, simply downloads the selected dart project template to make its user
+Create Darty App, simply downloads the selected darty project template to make its user
 ready for development.
+
+
+## Disclosure
+
+The project was named as Dart after the dart game all we know. Although I think it's a generic name, authorities from Google have claimed dart is a trademarked name they own. They asked me to
+find a new name for this project. Otherwise, they stated that their legal or trademark teams
+will be involved.
+
+Sadly... that's the reason why I renamed this project as create-darty-app.
+
+-- Eser
 
 
 ## Quick start
@@ -16,13 +27,13 @@ Use the following commands depending on preset you want to create:
 
 | Preset                   | Command                                       | Repository                                                 |
 |--------------------------|-----------------------------------------------|------------------------------------------------------------|
-| React                    | `npx create-dart-app react app`               | https://github.com/eserozvataf/dart-react-app              |
-| React Hooks              | `npx create-dart-app react-hooks app`         | https://github.com/eserozvataf/dart-react-hooks-app        |
+| React                    | `npx create-darty-app react app`              | https://github.com/eserozvataf/darty-react-app             |
+| React Hooks              | `npx create-darty-app react-hooks app`        | https://github.com/eserozvataf/darty-react-hooks-app       |
 
 
 ## Todo List
 
-See [GitHub Projects](https://github.com/eserozvataf/create-dart-project/projects) for more.
+See [GitHub Projects](https://github.com/eserozvataf/create-darty-project/projects) for more.
 
 
 ## Requirements
@@ -42,7 +53,7 @@ See [contributors.md](contributors.md)
 It is publicly open for any contribution. Bugfixes, new features and extra modules are welcome.
 
 * To contribute to code: Fork the repo, push your changes to your fork, and submit a pull request.
-* To report a bug: If something does not work, please report it using [GitHub Issues](https://github.com/eserozvataf/create-dart-app/issues).
+* To report a bug: If something does not work, please report it using [GitHub Issues](https://github.com/eserozvataf/create-darty-app/issues).
 
 
 ## To Support

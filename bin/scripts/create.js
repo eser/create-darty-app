@@ -22,7 +22,7 @@ ${colors.yellow('preset list:')}`);
         }
 
         console.error(`
-${colors.white('example:')} 'npx create-dart-app react app'
+${colors.white('example:')} 'npx create-darty-app react app'
 `);
 
         process.exit(1);
@@ -32,7 +32,7 @@ ${colors.white('example:')} 'npx create-dart-app react app'
     if (folder === undefined) {
         console.error(`${colors.red('specify a directory to create project files.')}
 
-${colors.white('example:')} 'npx create-dart-app ${preset} app'
+${colors.white('example:')} 'npx create-darty-app ${preset} app'
 `);
 
         process.exit(1);
@@ -46,7 +46,7 @@ ${colors.white('example:')} 'npx create-dart-app ${preset} app'
     shellSpawn('npm', [ 'install' ], target);
 
     console.log(`----------------------------------------
-Dart app is created under ${target}
+Darty app is created under ${target}
 First switch to app directory, then use commands listed below:
 
 ${colors.yellow('command list:')}
