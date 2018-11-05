@@ -22,7 +22,7 @@ ${colors.yellow('preset list:')}`);
         }
 
         console.error(`
-${colors.white('example:')} 'npx create-darty-app react app'
+${colors.bold('example:')} '${colors.yellow('npx create-darty-app react app')}'
 `);
 
         process.exit(1);
@@ -32,7 +32,7 @@ ${colors.white('example:')} 'npx create-darty-app react app'
     if (folder === undefined) {
         console.error(`${colors.red('specify a directory to create project files.')}
 
-${colors.white('example:')} 'npx create-darty-app ${preset} app'
+${colors.bold('example:')} '${colors.yellow('npx create-darty-app ${preset} app')}'
 `);
 
         process.exit(1);
@@ -45,16 +45,24 @@ ${colors.white('example:')} 'npx create-darty-app ${preset} app'
     rimraf.sync(`${target}/.git`);
     shellSpawn('npm', [ 'install' ], target);
 
-    console.log(`----------------------------------------
-Darty app is created under ${target}
+    console.log(`
+
+${colors.dim('----------------------------------------')}
+
+Darty app is ${colors.green('successfully')} created under ${target}
 First switch to app directory, then use commands listed below:
 
-${colors.yellow('command list:')}
-- ${colors.white('npm run lint')}      : start linter
-- ${colors.white('npm run test')}      : run tests
-- ${colors.white('npm run dev')}       : start development mode
-- ${colors.white('npm run bundle')}    : create an app bundle under dist/ folder
-- ${colors.white('npm start')}         : serve bundle from localhost with SSR enabled
+${colors.bold('command list:')}
+- ${colors.yellow('npm run lint')}      : start linter
+- ${colors.yellow('npm run test')}      : run tests
+- ${colors.yellow('npm run dev')}       : start development mode
+- ${colors.yellow('npm run bundle')}    : create an app bundle under dist/ folder
+- ${colors.yellow('npm start')}         : serve bundle from localhost with SSR enabled
+
+To start immediately,
+
+  cd ${path.relative(process.cwd(), target)}
+  npm run dev
 `);
 }
 
