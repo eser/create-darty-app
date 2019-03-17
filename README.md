@@ -28,7 +28,6 @@ Use the following commands depending on preset you want to create:
 | Preset                   | Command                                       | Repository                                                 |
 |--------------------------|-----------------------------------------------|------------------------------------------------------------|
 | React                    | `npx create-darty-app react app`              | https://github.com/eserozvataf/darty-react-app             |
-| React Hooks              | `npx create-darty-app react-hooks app`        | https://github.com/eserozvataf/darty-react-hooks-app       |
 
 
 ## Todo List

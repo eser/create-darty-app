@@ -8,9 +8,9 @@
     "boilerplate",
     "starter"
   ],
-  "version": "0.1.2",
+  "version": "0.1.3",
   "homepage": "https://github.com/eserozvataf/create-darty-app",
-  "author": "Eser Ozvataf <eser@ozvataf.com>",
+  "author": "Eser Ozvataf <eser@ozvataf.com> (https://twitter.com/eser)",
   "contributors": [
     {
       "name": "Eser Ozvataf",
@@ -39,8 +39,8 @@
     "node": ">=8.10.0"
   },
   "dependencies": {
-    "colors": "^1.3.2",
+    "colors": "^1.3.3",
     "cross-spawn": "^6.0.5",
-    "rimraf": "^2.6.2"
+    "rimraf": "^2.6.3"
   }
 }
