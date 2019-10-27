@@ -27,7 +27,7 @@ Use the following commands depending on preset you want to create:
 
 | Preset                   | Command                                       | Repository                                                 |
 |--------------------------|-----------------------------------------------|------------------------------------------------------------|
-| React                    | `npx create-darty-app react app`              | https://github.com/eserozvataf/darty-react-app             |
+| React                    | `yarn create darty-app react app`             | https://github.com/eserozvataf/darty-react-app             |
 
 
 ## Todo List

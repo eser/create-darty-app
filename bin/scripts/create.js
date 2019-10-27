@@ -5,37 +5,50 @@ const path = require('path');
 const rimraf = require('rimraf');
 const colors = require('colors/safe');
 
+function log(entry) {
+    // eslint-disable-next-line no-console
+    console.log(entry);
+}
+
+function error(entry) {
+    // eslint-disable-next-line no-console
+    console.error(entry);
+}
+
+// eslint-disable-next-line max-statements
 function create(preset, folder) {
     const selectedPreset = presets[preset];
 
     if (selectedPreset === undefined || preset === undefined) {
         if (selectedPreset !== undefined) {
-            console.error(colors.red(`no such preset named ${preset}`));
+            error(colors.red(`no such preset named ${preset}`));
         }
 
-        console.error(`${colors.red('specify a preset to create project files.')}
+        error(`${colors.red('specify a preset to create project files.')}
 
 ${colors.yellow('preset list:')}`);
 
-        for (const presetKey in presets) {
-            console.error(`- ${colors.white(presetKey)}`);
-        }
+        Object.keys(presets).forEach((presetKey) => {
+            error(`- ${colors.white(presetKey)}`);
+        });
 
-        console.error(`
-${colors.bold('example:')} '${colors.yellow('npx create-darty-app react app')}'
+        error(`
+${colors.bold('example:')} '${colors.yellow('yarn create darty-app react app')}'
 `);
 
         process.exit(1);
+
         return;
     }
 
     if (folder === undefined) {
-        console.error(`${colors.red('specify a directory to create project files.')}
+        error(`${colors.red('specify a directory to create project files.')}
 
-${colors.bold('example:')} '${colors.yellow('npx create-darty-app ${preset} app')}'
+${colors.bold('example:')} '${colors.yellow(`yarn create darty-app ${preset} app`)}'
 `);
 
         process.exit(1);
+
         return;
     }
 
@@ -43,9 +56,9 @@ ${colors.bold('example:')} '${colors.yellow('npx create-darty-app ${preset} app'
 
     shellSpawn('git', [ 'clone', '--depth=1', '--branch=master', selectedPreset.repository, target ]);
     rimraf.sync(`${target}/.git`);
-    shellSpawn('npm', [ 'install' ], target);
+    shellSpawn('yarn', [ 'install' ], target);
 
-    console.log(`
+    log(`
 
 ${colors.dim('----------------------------------------')}
 
@@ -53,16 +66,16 @@ Darty app is ${colors.green('successfully')} created under ${target}
 First switch to app directory, then use commands listed below:
 
 ${colors.bold('command list:')}
-- ${colors.yellow('npm run lint')}      : start linter
-- ${colors.yellow('npm run test')}      : run tests
-- ${colors.yellow('npm run dev')}       : start development mode
-- ${colors.yellow('npm run bundle')}    : create an app bundle under dist/ folder
-- ${colors.yellow('npm start')}         : serve bundle from localhost with SSR enabled
+- ${colors.yellow('yarn lint')}      : start linter
+- ${colors.yellow('yarn test')}      : run tests
+- ${colors.yellow('yarn dev')}       : start development mode
+- ${colors.yellow('yarn bundle')}    : create an app bundle under dist/ folder
+- ${colors.yellow('yarn start')}     : serve bundle from localhost with SSR enabled
 
 To start immediately,
 
   cd ${path.relative(process.cwd(), target)}
-  npm run dev
+  yarn dev
 `);
 }
 

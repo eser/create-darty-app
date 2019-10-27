@@ -1,5 +1,6 @@
 function locateCommandFunc(...args) {
-    const commandFunc = require(`../scripts/create`);
+    // eslint-disable-next-line global-require
+    const commandFunc = require('../scripts/create');
 
     return {
         error: null,
