@@ -261,10 +261,10 @@ escape-string-regexp@^1.0.5:
   resolved "https://registry.yarnpkg.com/escape-string-regexp/-/escape-string-regexp-1.0.5.tgz#1b61c0562190a8dff6ae3bb2cf0200ca130b86d4"
   integrity sha1-G2HAViGQqN/2rjuyzwIAyhMLhtQ=
 
-eslint-config-eser@^2.1.6:
-  version "2.1.6"
-  resolved "https://registry.yarnpkg.com/eslint-config-eser/-/eslint-config-eser-2.1.6.tgz#d88f38b214273660c9e01f009680896095164f76"
-  integrity sha512-K3JaDO+45o3mGhXjH11+5D65G4Zc3YHdX5l7XEJvGd7NDVfGiecizDaBtGhGiJR2pvOrarSs4jXsaNFrPOjJCw==
+eslint-config-eser@^2.1.8:
+  version "2.1.8"
+  resolved "https://registry.yarnpkg.com/eslint-config-eser/-/eslint-config-eser-2.1.8.tgz#b90caabdc2419e59ff0498f3de81a7f4e321b9b9"
+  integrity sha512-JWfJolpd6P7Tuh35AjISoPWM6LKdZgrBR3f5DqJfKVuDh4cLgh7B8YJYhyTMMIBX90U0Mq4KeP6NNbwYymyFDA==
   dependencies:
     confusing-browser-globals "^1.0.9"
 

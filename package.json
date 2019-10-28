@@ -8,7 +8,7 @@
     "boilerplate",
     "starter"
   ],
-  "version": "0.1.4",
+  "version": "0.1.5",
   "homepage": "https://github.com/eserozvataf/create-darty-app",
   "author": "Eser Ozvataf <eser@ozvataf.com> (https://twitter.com/eser)",
   "contributors": [
@@ -52,7 +52,7 @@
   },
   "devDependencies": {
     "eslint": "^6.6.0",
-    "eslint-config-eser": "^2.1.6",
+    "eslint-config-eser": "^2.1.8",
     "eslint-plugin-import": "^2.18.2"
   }
 }
