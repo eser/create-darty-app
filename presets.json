@@ -1,8 +1,8 @@
 {
-    "react": {
-        "repository": "https://github.com/eserozvataf/darty-react-app"
-    },
-    "vanilla": {
-        "repository": "https://github.com/burakcan/darty-vanilla-app"
-    }
+  "react": {
+    "repository": "https://github.com/eserozvataf/darty-react-app"
+  },
+  "vanilla": {
+    "repository": "https://github.com/burakcan/darty-vanilla-app"
+  }
 }

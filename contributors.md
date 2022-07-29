@@ -2,9 +2,9 @@
 
 ## Committers
 
-* Eser Ozvataf - @eserozvataf (http://eser.ozvataf.com/)
+- Eser Ozvataf - @eserozvataf (http://eser.ozvataf.com/)
 
 ## Supporters
 
-* Burak Can - @burakcan
-* Sylvinus - @sylvinus
+- Burak Can - @burakcan
+- Sylvinus - @sylvinus

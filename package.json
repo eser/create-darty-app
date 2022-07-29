@@ -8,7 +8,7 @@
     "boilerplate",
     "starter"
   ],
-  "version": "0.1.5",
+  "version": "0.1.6",
   "homepage": "https://github.com/eserozvataf/create-darty-app",
   "author": "Eser Ozvataf <eser@ozvataf.com> (https://twitter.com/eser)",
   "contributors": [
@@ -40,19 +40,12 @@
   },
   "scripts": {
     "cleanup": "rm -rf yarn.lock node_modules/",
-    "lint": "eslint ./bin/",
-    "lint:fix": "eslint --fix ./bin/",
     "test": "",
     "test:coverage": ""
   },
   "dependencies": {
     "colors": "^1.4.0",
-    "cross-spawn": "^7.0.1",
-    "rimraf": "^3.0.0"
-  },
-  "devDependencies": {
-    "eslint": "^6.6.0",
-    "eslint-config-eser": "^2.1.8",
-    "eslint-plugin-import": "^2.18.2"
+    "cross-spawn": "^7.0.3",
+    "rimraf": "^3.0.2"
   }
 }
